@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #381D2A;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #e6d3be;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #381D2A; 
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+    background-color: #FFCB8E; 
+    color: #381D2A; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #381D2A;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #810000; 
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFCB8E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #381D2A;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #381D2A;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E9E3B4;
+    color: #381D2A;
+}
+
+#error {
+    display: none;
+    background-color: #ffcccc;
+    color: #810000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

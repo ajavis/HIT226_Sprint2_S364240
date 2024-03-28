@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="error"></div>
+    <header>
+        <div class="container">
+            <h1>Reader's Creed</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+   <form action="results.html" method="post">
+    <h2>Leave a Book Review</h2>
+            <p>We would love to hear your thoughts on the book you purchased at Bookstore name. Our booklovers would appreciate what you think of the book so don't hesitate and share your experience!</p>
+
+    <div>
+        <label for="name">UserName</label>
+        <input type="text" name="name" placeholder="Enter 3 to 25 characters for your username" required>
+    </div>
+    <div>
+        <label for="name">Email</label>
+        <input type="email" name="email" placeholder="Enter a valid email address" required>
+    </div>
+    <div>
+        <label for="book_title">Book Title </label>
+        <input type="text"name="book_title" placeholder="Enter the title of the book eg. The Book Thief" required>
+    </div>
+    <div>
+        <label for="author">Author </label>
+        <input type="text"name="Author" placeholder="Enter the name of the author eg. Markus Zusak" required>
+    </div>
+    <div>
+        <label for="title_review">Title of your review</label>
+        <input type="text "name="title_review" placeholder="Be creative for the title!"required>
+    </div>
+    <div>
+        <label for="review">Your review</label>
+        <textarea id="review" name="review" rows="4" placeholder="Maximum of 500 characters"required></textarea>
+    </div>
+    <div>
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required>
+      <option value="">Select Rating</option>
+      <option value="5">5 Stars</option>
+      <option value="4">4 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="2">2 Stars</option>
+      <option value="1">1 Star</option>
+    </select>
+  </div>
+        <button type="submit">Submit</button>
+    </div>
+   </form> 
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</main>
+</html>
